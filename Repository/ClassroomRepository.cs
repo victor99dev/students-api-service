@@ -1,5 +1,4 @@
-
-using studentsAPI.Context;
+using studentsAPI.Infrastructure.Common;
 using studentsAPI.Models.Dtos.ClassroomDtos;
 using studentsAPI.Models.Entities;
 using studentsAPI.Repository.Interfaces;

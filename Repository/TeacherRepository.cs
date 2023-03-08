@@ -1,9 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using studentsAPI.Context;
+using studentsAPI.Infrastructure.Common;
 using studentsAPI.Models.Dtos.TeacherDtos;
 using studentsAPI.Models.Entities;
 using studentsAPI.Repository.Interfaces;
 
+#nullable disable warnings
 namespace studentsAPI.Repository
 {
     public class TeacherRepository : BaseRepository, ITeacherRepository

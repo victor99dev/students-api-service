@@ -1,4 +1,4 @@
-using studentsAPI.Context;
+using studentsAPI.Infrastructure.Common;
 using studentsAPI.Repository.Interfaces;
 
 namespace studentsAPI.Repository

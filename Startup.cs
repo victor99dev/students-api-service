@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using studentsAPI.Context;
+using studentsAPI.Infrastructure.Common;
 using studentsAPI.Repository;
 using studentsAPI.Repository.Interfaces;
 
