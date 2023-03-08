@@ -19,16 +19,19 @@ namespace studentsAPI.Repository
         {
             return await _context.Teachers
                 .Select(x => new TeacherDto { 
-                    Id = x.Id,
-                    Name = x.Name,
-                    IsActive = x.IsActive
+                    id = x.Id,
+                    name = x.Name,
+                    created_at = x.CreatedAt,
+                    updated_at = x.UpdatedAt,
+                    is_active = x.IsActive
                     })
                 .ToListAsync();
         }
 
-        public Task<Teacher> GetById(int id)
+        public async Task<Teacher> GetById(Guid id)
         {
-            throw new NotImplementedException();
+            return await _context.Teachers
+                .Where(x => x.Id == id).FirstOrDefaultAsync();
         }
     }
 }
