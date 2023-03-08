@@ -1,10 +1,8 @@
-using System.Runtime.Serialization;
 using studentsAPI.Models.Dtos.ClassroomDtos;
 
 #nullable disable warnings
 namespace studentsAPI.Models.Dtos.StudentDtos
 {
-    [DataContract]
     public class StudentDto
     {
         public Guid id { get; set; }

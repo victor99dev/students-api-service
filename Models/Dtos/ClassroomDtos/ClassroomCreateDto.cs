@@ -1,9 +1,6 @@
-using System.Runtime.Serialization;
-
 #nullable disable warnings
 namespace studentsAPI.Models.Dtos.ClassroomDtos
 {
-    [DataContract]
     public class ClassroomCreateDto
     {
         public string name { get; set; }
