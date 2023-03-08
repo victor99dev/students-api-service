@@ -1,7 +1,7 @@
 using studentsAPI.Models.Dtos.TeacherDtos;
 
 #nullable disable warnings
-namespace studentsAPI.Models.Dtos.SchoolSubjectsDtos
+namespace studentsAPI.Models.Dtos.SchoolSubjectDtos
 {
     public class SchoolSubjectDto
     {
