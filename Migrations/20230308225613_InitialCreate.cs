@@ -32,7 +32,7 @@ namespace studentsAPI.Migrations
                 {
                     id = table.Column<Guid>(type: "uuid", nullable: false),
                     name = table.Column<string>(type: "text", nullable: false),
-                    teacher_id = table.Column<Guid>(type: "uuid", nullable: false),
+                    teacher_id = table.Column<Guid>(type: "uuid", nullable: true),
                     created_at = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     updated_at = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     is_active = table.Column<bool>(type: "boolean", nullable: false)
@@ -45,7 +45,7 @@ namespace studentsAPI.Migrations
                         column: x => x.teacher_id,
                         principalTable: "Teachers",
                         principalColumn: "id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.SetNull);
                 });
 
             migrationBuilder.CreateIndex(

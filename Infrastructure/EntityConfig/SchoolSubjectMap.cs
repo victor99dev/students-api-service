@@ -18,12 +18,12 @@ namespace studentsAPI.Infrastructure.EntityConfig
                 .IsRequired();
 
             builder.Property(x => x.TeacherId)
-                .HasColumnName("teacher_id")
-                .IsRequired();
+                .HasColumnName("teacher_id");
 
             builder.HasOne(x => x.Teacher)
                 .WithMany()
-                .HasForeignKey(x => x.TeacherId);
+                .HasForeignKey(x => x.TeacherId)
+                .OnDelete(DeleteBehavior.SetNull);
         }
     }
 }

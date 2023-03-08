@@ -2,11 +2,19 @@ using AutoMapper;
 using studentsAPI.Models.Dtos.SchoolSubjectDtos;
 using studentsAPI.Models.Entities;
 
+
 public class SchoolSubjectProfile  : Profile
 {   
     public SchoolSubjectProfile()
-    {
+    {   
         CreateMap<SchoolSubjectDto, SchoolSubject>()
+            .ForPath(dest => dest.Id, opt => opt.MapFrom(src => src.id))
+            .ForPath(dest => dest.Name, opt => opt.MapFrom(src => src.name))
+            .ForPath(dest => dest.TeacherId, opt => opt.MapFrom(src => src.teacher_name))
+            .ForPath(dest => dest.IsActive, opt => opt.MapFrom(src => src.is_active))
+            .ReverseMap();
+        
+        CreateMap<SchoolSubjectDetailDto, SchoolSubject>()
             .ForPath(dest => dest.Id, opt => opt.MapFrom(src => src.id))
             .ForPath(dest => dest.Name, opt => opt.MapFrom(src => src.name))
             .ForPath(dest => dest.TeacherId, opt => opt.MapFrom(src => src.teacher.id))
@@ -22,7 +30,7 @@ public class SchoolSubjectProfile  : Profile
             .ReverseMap();
         CreateMap<SchoolSubjectUpdateDto, SchoolSubject>()
             .ForPath(dest => dest.Name, opt => opt.MapFrom(src => src.name))
-            .ForPath(dest => dest.TeacherId, opt => opt.MapFrom(src => src.teacher))
+            .ForPath(dest => dest.TeacherId, opt => opt.MapFrom(src => src.teacher_id))
             .ForPath(dest => dest.UpdatedAt, opt => opt.MapFrom(src => src.updated_at))
             .ForPath(dest => dest.IsActive, opt => opt.MapFrom(src => src.is_active))
             .ReverseMap();

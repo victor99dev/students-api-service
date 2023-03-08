@@ -17,6 +17,5 @@ namespace studentsAPI.Infrastructure.EntityConfig
                 .HasColumnName("name")
                 .IsRequired();
         }
-
     }
 }

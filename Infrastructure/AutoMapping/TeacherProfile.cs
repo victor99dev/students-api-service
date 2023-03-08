@@ -9,6 +9,11 @@ public class TeacherProfile : Profile
         CreateMap<TeacherDto, Teacher>()
             .ForPath(dest => dest.Id, opt => opt.MapFrom(src => src.id))
             .ForPath(dest => dest.Name, opt => opt.MapFrom(src => src.name))
+            .ForPath(dest => dest.IsActive, opt => opt.MapFrom(src => src.is_active))
+            .ReverseMap();
+        CreateMap<TeacherDetailDto, Teacher>()
+            .ForPath(dest => dest.Id, opt => opt.MapFrom(src => src.id))
+            .ForPath(dest => dest.Name, opt => opt.MapFrom(src => src.name))
             .ForPath(dest => dest.CreatedAt, opt => opt.MapFrom(src => src.created_at))
             .ForPath(dest => dest.UpdatedAt, opt => opt.MapFrom(src => src.updated_at))
             .ForPath(dest => dest.IsActive, opt => opt.MapFrom(src => src.is_active))

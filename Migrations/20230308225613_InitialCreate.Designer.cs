@@ -12,7 +12,7 @@ using studentsAPI.Infrastructure.Common;
 namespace studentsAPI.Migrations
 {
     [DbContext(typeof(StudentContext))]
-    [Migration("20230308171502_InitialCreate")]
+    [Migration("20230308225613_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -46,7 +46,6 @@ namespace studentsAPI.Migrations
                         .HasColumnName("name");
 
                     b.Property<Guid?>("TeacherId")
-                        .IsRequired()
                         .HasColumnType("uuid")
                         .HasColumnName("teacher_id");
 
@@ -95,8 +94,7 @@ namespace studentsAPI.Migrations
                     b.HasOne("studentsAPI.Models.Entities.Teacher", "Teacher")
                         .WithMany()
                         .HasForeignKey("TeacherId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Teacher");
                 });

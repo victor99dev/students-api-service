@@ -43,7 +43,6 @@ namespace studentsAPI.Migrations
                         .HasColumnName("name");
 
                     b.Property<Guid?>("TeacherId")
-                        .IsRequired()
                         .HasColumnType("uuid")
                         .HasColumnName("teacher_id");
 
@@ -92,8 +91,7 @@ namespace studentsAPI.Migrations
                     b.HasOne("studentsAPI.Models.Entities.Teacher", "Teacher")
                         .WithMany()
                         .HasForeignKey("TeacherId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Teacher");
                 });

@@ -22,8 +22,6 @@ namespace studentsAPI.Repository
                 .Select(x => new TeacherDto { 
                     id = x.Id,
                     name = x.Name,
-                    created_at = x.CreatedAt,
-                    updated_at = x.UpdatedAt,
                     is_active = x.IsActive
                     })
                 .ToListAsync();
@@ -32,7 +30,8 @@ namespace studentsAPI.Repository
         public async Task<Teacher> GetById(Guid id)
         {
             return await _context.Teachers
-                .Where(x => x.Id == id).FirstOrDefaultAsync();
+                .Where(x => x.Id == id)
+                .FirstOrDefaultAsync();
         }
     }
 }
