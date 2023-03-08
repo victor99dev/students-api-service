@@ -48,7 +48,7 @@ namespace studentsAPI.Controllers
         {
             var getTeacher = await _repository.GetById(id);
 
-            var teacherReturn = _mapper.Map<TeacherDto>(getTeacher);
+            var teacherReturn = _mapper.Map<TeacherDetailDto>(getTeacher);
 
             return teacherReturn != null
                     ? Ok(teacherReturn)
