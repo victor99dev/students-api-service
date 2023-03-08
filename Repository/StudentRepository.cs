@@ -19,7 +19,7 @@ namespace studentsAPI.Repository
             throw new NotImplementedException();
         }
 
-        public Task<Student> GetById(int id)
+        public Task<Student> GetById(Guid id)
         {
             throw new NotImplementedException();
         }

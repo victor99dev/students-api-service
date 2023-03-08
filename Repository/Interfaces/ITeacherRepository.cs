@@ -6,6 +6,6 @@ namespace studentsAPI.Repository.Interfaces
     public interface ITeacherRepository : IBaseRepository
     {
         Task<IEnumerable<TeacherDto>> GetAll();
-        Task<Teacher> GetById(int id);
+        Task<Teacher> GetById(Guid id);
     }
 }
