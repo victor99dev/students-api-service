@@ -1,4 +1,4 @@
-using studentsAPI.Models.Dtos.SchoolSubjectsDtos;
+using studentsAPI.Models.Dtos.SchoolSubjectDtos;
 using studentsAPI.Models.Dtos.StudentDtos;
 
 #nullable disable warnings
