@@ -1,11 +1,14 @@
+using System.Runtime.Serialization;
+
 #nullable disable warnings
 namespace studentsAPI.Models.Dtos.SchoolSubjectDtos
 {
+    [DataContract]
     public class SchoolSubjectCreateDto
     {
-        public string Name { get; set; }
-        public Guid Teacher { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public bool IsActive { get; set; }
+        public string name { get; set; }
+        public Guid teacher_id { get; set; }
+        public DateTime created_at { get; set; }
+        public bool is_active { get; set; }
     }
 }

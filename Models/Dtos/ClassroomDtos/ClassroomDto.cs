@@ -1,17 +1,19 @@
 using studentsAPI.Models.Dtos.SchoolSubjectDtos;
 using studentsAPI.Models.Dtos.StudentDtos;
+using System.Runtime.Serialization;
 
 #nullable disable warnings
 namespace studentsAPI.Models.Dtos.ClassroomDtos
 {
+    [DataContract]
     public class ClassroomDto
     {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
-        public List<StudentDto> Students { get; set; }
-        public List<SchoolSubjectDto> SchoolSubjects { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
-        public bool IsActive { get; set; }
+        public Guid id { get; set; }
+        public string name { get; set; }
+        public List<StudentDto> students { get; set; }
+        public List<SchoolSubjectDto> school_subjects { get; set; }
+        public DateTime created_at { get; set; }
+        public DateTime updated_at { get; set; }
+        public bool is_active { get; set; }
     }
 }
