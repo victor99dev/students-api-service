@@ -1,45 +1,26 @@
-using Microsoft.EntityFrameworkCore;
-using Microsoft.OpenApi.Models;
-using studentsAPI.Context;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
-builder.Services.AddDbContext<StudentContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("StudentDatabase")));
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(options =>
+namespace studentsAPI
 {
-    options.SwaggerDoc("v1", new OpenApiInfo
+ public class Program
     {
-        Version = "v1.0.0",
-        Title = "Students Service.",
-        Description = "Registration flow of classes and students.",
-        Contact = new OpenApiContact
+        public static void Main(string[] args)
         {
-            Name = "Victor99Dev",
-            Url = new Uri("https://victor99dev.site/")
+            CreateHostBuilder(args).Build().Run();
         }
-    });
-});
 
-var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
+        public static IHostBuilder CreateHostBuilder(string[] args) =>
+            Host.CreateDefaultBuilder(args)
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseStartup<Startup>();
+                });
+    }
 }
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();
-
