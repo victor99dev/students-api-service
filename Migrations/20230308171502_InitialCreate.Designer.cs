@@ -5,14 +5,14 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
-using studentsAPI.Context;
+using studentsAPI.Infrastructure.Common;
 
 #nullable disable
 
 namespace studentsAPI.Migrations
 {
     [DbContext(typeof(StudentContext))]
-    [Migration("20230308071139_InitialCreate")]
+    [Migration("20230308171502_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
