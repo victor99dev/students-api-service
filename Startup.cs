@@ -30,11 +30,11 @@ namespace studentsAPI
             services.AddScoped<IStudentRepository, StudentRepository>();
             services.AddScoped<ITeacherRepository, TeacherRepository>();
             
-            // services.AddDbContext<StudentContext>(options =>
-            // {
-            //     options.UseSqlServer(Configuration.GetConnectionString("StudentDatabase"),
-            //         assembly => assembly.MigrationsAssembly(typeof(StudentContext).Assembly.FullName));
-            // });
+            services.AddDbContext<StudentContext>(options =>
+            {
+                options.UseNpgsql(Configuration.GetConnectionString("StudentDatabase"),
+                    assembly => assembly.MigrationsAssembly(typeof(StudentContext).Assembly.FullName));
+            });
 
             services.AddSwaggerGen(c =>
             {
