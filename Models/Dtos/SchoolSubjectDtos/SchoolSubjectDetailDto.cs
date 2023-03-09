@@ -1,3 +1,4 @@
+#nullable disable warnings
 using studentsAPI.Models.Dtos.TeacherDtos;
 
 namespace studentsAPI.Models.Dtos.SchoolSubjectDtos
