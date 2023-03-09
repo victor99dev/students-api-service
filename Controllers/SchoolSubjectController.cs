@@ -75,5 +75,20 @@ namespace studentsAPI.Controllers
                 ? Ok("School subject updated successfully")
                 : BadRequest("Error updating School subject");
         }
+
+        [HttpDelete("delete/{id}")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var getSchoolSubject = await _repository.GetById(id);
+
+            if (getSchoolSubject == null)
+                return NotFound("School subject is not found");
+
+            _repository.Delete(getSchoolSubject);
+
+            return await _repository.SaveChangesAsync()
+                ? Ok("School subject deleted successfully")
+                : BadRequest("Erro deleting School subject");
+        }
     }
 }
