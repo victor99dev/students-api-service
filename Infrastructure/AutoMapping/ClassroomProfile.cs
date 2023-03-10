@@ -1,5 +1,7 @@
+using System.Linq.Expressions;
 using AutoMapper;
 using studentsAPI.Models.Dtos.ClassroomDtos;
+using studentsAPI.Models.Dtos.StudentDtos;
 using studentsAPI.Models.Entities;
 
 public class ClassroomProfile : Profile
@@ -21,11 +23,15 @@ public class ClassroomProfile : Profile
             .ReverseMap();
          CreateMap<ClassroomCreateDto, Classroom>()
             .ForPath(dest => dest.Name, opt => opt.MapFrom(src => src.name))
+            .ForMember(dest => dest.StudentsId, opt => opt.MapFrom(src => src.students_id))
+            .ForMember(dest => dest.SchoolSubjectId, opt => opt.MapFrom(src => src.school_subjects_id))
             .ForPath(dest => dest.CreatedAt, opt => opt.MapFrom(src => src.created_at))
             .ForPath(dest => dest.IsActive, opt => opt.MapFrom(src => src.is_active))
             .ReverseMap();
         CreateMap<ClassroomUpdateDto, Classroom>()
             .ForPath(dest => dest.Name, opt => opt.MapFrom(src => src.name))
+            .ForPath(dest => dest.StudentsId, opt => opt.MapFrom(src => src.students_id))
+            .ForPath(dest => dest.SchoolSubjectId, opt => opt.MapFrom(src => src.school_subjects_id))
             .ForPath(dest => dest.UpdatedAt, opt => opt.MapFrom(src => src.updated_at))
             .ForPath(dest => dest.IsActive, opt => opt.MapFrom(src => src.is_active))
             .ReverseMap();
