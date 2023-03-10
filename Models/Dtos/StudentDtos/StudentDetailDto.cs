@@ -1,14 +1,12 @@
 using studentsAPI.Models.Dtos.ClassroomDtos;
 
 #nullable disable warnings
-
 namespace studentsAPI.Models.Dtos.StudentDtos
 {
     public class StudentDetailDto
     {
         public Guid id { get; set; }
         public string name { get; set; }
-        public ClassroomDto classroom { get; set; }
         public DateTime date_of_birth { get; set; }
         public string? rg { get; set; }
         public string legal_responsible_name { get; set; }
