@@ -18,6 +18,7 @@ public class StudentProfile : Profile
             .ForPath(dest => dest.Rg, opt => opt.MapFrom(src => src.rg))
             .ForPath(dest => dest.LegalResponsibleName, opt => opt.MapFrom(src => src.legal_responsible_name))
             .ForPath(dest => dest.AddressStreet, opt => opt.MapFrom(src => src.address_street))
+            .ForPath(dest => dest.PhoneNumber, opt => opt.MapFrom(src => src.phone_number))
             .ForPath(dest => dest.CreatedAt, opt => opt.MapFrom(src => src.created_at))
             .ForPath(dest => dest.UpdatedAt, opt => opt.MapFrom(src => src.updated_at))
             .ForPath(dest => dest.IsActive, opt => opt.MapFrom(src => src.is_active))
@@ -28,6 +29,7 @@ public class StudentProfile : Profile
             .ForPath(dest => dest.Rg, opt => opt.MapFrom(src => src.rg))
             .ForPath(dest => dest.LegalResponsibleName, opt => opt.MapFrom(src => src.legal_responsible_name))
             .ForPath(dest => dest.AddressStreet, opt => opt.MapFrom(src => src.address_street))
+            .ForPath(dest => dest.PhoneNumber, opt => opt.MapFrom(src => src.phone_number))
             .ForPath(dest => dest.CreatedAt, opt => opt.MapFrom(src => src.created_at))
             .ForPath(dest => dest.IsActive, opt => opt.MapFrom(src => src.is_active))
             .ReverseMap();
@@ -37,6 +39,7 @@ public class StudentProfile : Profile
             .ForPath(dest => dest.Rg, opt => opt.MapFrom(src => src.rg))
             .ForPath(dest => dest.LegalResponsibleName, opt => opt.MapFrom(src => src.legal_responsible_name))
             .ForPath(dest => dest.AddressStreet, opt => opt.MapFrom(src => src.address_street))
+            .ForPath(dest => dest.PhoneNumber, opt => opt.MapFrom(src => src.phone_number))
             .ForPath(dest => dest.UpdatedAt, opt => opt.MapFrom(src => src.updated_at))
             .ForPath(dest => dest.IsActive, opt => opt.MapFrom(src => src.is_active))
             .ReverseMap();
