@@ -1,8 +1,10 @@
+using Microsoft.EntityFrameworkCore;
 using studentsAPI.Infrastructure.Common;
 using studentsAPI.Models.Dtos.StudentDtos;
 using studentsAPI.Models.Entities;
 using studentsAPI.Repository.Interfaces;
 
+#nullable disable warnings
 namespace studentsAPI.Repository
 {
     public class StudentRepository : BaseRepository, IStudentRepository
@@ -14,14 +16,22 @@ namespace studentsAPI.Repository
             _context = context;
         }
 
-        public Task<IEnumerable<StudentDto>> GetAll()
+        public async Task<IEnumerable<StudentDto>> GetAll()
         {
-            throw new NotImplementedException();
+            return await _context.Students
+                .Select(x => new StudentDto {
+                    id = x.Id,
+                    name = x.Name,
+                    is_active = x.IsActive
+                    })
+                .ToListAsync();
         }
 
-        public Task<Student> GetById(Guid id)
+        public async Task<Student> GetById(Guid id)
         {
-            throw new NotImplementedException();
+             return await _context.Students
+                .Where(x => x.Id == id)
+                .FirstOrDefaultAsync();
         }
     }
 }
