@@ -32,7 +32,7 @@ namespace studentsAPI
             
             services.AddDbContext<StudentContext>(options =>
             {
-                options.UseNpgsql(Configuration.GetConnectionString("StudentDatabase"),
+                options.UseSqlServer(Configuration.GetConnectionString("StudentDatabase"),
                     assembly => assembly.MigrationsAssembly(typeof(StudentContext).Assembly.FullName));
             });
 
