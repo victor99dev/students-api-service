@@ -25,12 +25,14 @@ Essa aplicação em si é bem simples e com poucas entidades se relacionando, se
 - School Subject (Matéria Escolar).
 - Teacher (Professor).
 
-Assim que foi proposto o teste, fiz questão de fazer o levantando como uma sprint, no primeiro dia, me desafiei em uma arquitetura bem rudimentar, porém serviu como base para o desenvolvimentde de minha aplicação, nele pensei em como eu poderia utilizar a API, como as entidades iriam se relacionar e como eu gostaria dos paylous viria a ser retornado.
+Para acessar a API, basta clicar no [Link](https://localhost:7060/swagger/index.html) para o acesso da mesma.
+
+Por meio de organização, fiz questão de fazer o levantando como uma sprint, no primeiro dia, me desafiei em uma arquitetura bem rudimentar, porém serviu como base para o desenvolvimentde de minha aplicação, nele pensei em como eu poderia utilizar a API, como as entidades iriam se relacionar e como eu gostaria dos paylous viria a ser retornado.
 
 Software Architecture:
 ![preview1 img](/docs/img/software-architecture.png)
 
-Aqui temos a relação das minhas tabelas:
+Aqui temos as relações entre minhas tabelas:
 
 ![preview2 img](/docs/img/studentdb-relations.png)
 
@@ -193,4 +195,4 @@ Utilizando no Swagger:
     - [Swagger](https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-7.0)
     - [Auto](https://automapper.org/)
 - Link do Figma pois foi por ele que fiz a arquitetura da API: [Link](https://www.figma.com/)
-- Dbeaver é por onde acesso meus bancos de dados e gero a relações entre as tabelas: [Link](https://dbeaver.io/)
+- Dbeaver é por onde acesso meus bancos de dados e gero O DER do banco: [Link](https://dbeaver.io/)
