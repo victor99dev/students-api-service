@@ -2,13 +2,11 @@
 
 ## 💻 | Projeto: Construindo uma API de cadastro Alunos.
 
-Seja bem vindo, esse projeto foi feito no intuito de criar uma API do zero e fazendo o deploy na Azure.
+Seja bem vindo, esse projeto foi feito no intuito de criar uma API com SQL server.
 
 - Colocando em prática alguns conceitos e utilizando o EF.
 - Utilizando a linguagem C#.
 - Utilizando banco de dados SQLServer.
-- Fazendo deploy na Azure.
-
 ## ⚙ | Projeto API.
 
 ### ✔ | Tecnologias:
@@ -193,6 +191,6 @@ Utilizando no Swagger:
 - Documentações: 
     - [.Net](https://learn.microsoft.com/pt-br/dotnet/)
     - [Swagger](https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-7.0)
-    - [Auto](https://automapper.org/)
+    - [Automapper](https://automapper.org/)
 - Link do Figma pois foi por ele que fiz a arquitetura da API: [Link](https://www.figma.com/)
 - Dbeaver é por onde acesso meus bancos de dados e gero O DER do banco: [Link](https://dbeaver.io/)
