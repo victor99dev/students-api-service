@@ -7,7 +7,7 @@ Seja bem vindo, esse projeto foi feito no intuito de criar uma API com SQL serve
 - Colocando em prática alguns conceitos e utilizando o EF.
 - Utilizando a linguagem C#.
 - Utilizando banco de dados SQLServer.
-## ⚙ | Projeto API.
+## ⚙ | API.
 
 ### ✔ | Tecnologias:
 - .NET 6
@@ -22,6 +22,16 @@ Essa aplicação em si é bem simples e com poucas entidades se relacionando, se
 - Classroom (Sala de Aula).
 - School Subject (Matéria Escolar).
 - Teacher (Professor).
+
+### ⌨ | Comandos
+
+| **Comandos**                                   |                                              **Descrição**|
+|------------------------------------------------|------------------------------------------------------------|
+|                                  `dotnet build`|                Constroi o projeto e todas suas dependências|
+|                                    `dotnet run`|                                            Inicia o projeto|
+|                     `dotnet ef database update`| Comando para criar ou atualizar o esquema do banco de dados|
+|   `dotnet ef migrations add NomeDaMigraçãoAqui`| Crianção de suas migrations, servindo para criar, atualizar ou excluir suas tabelas ou campos de determinada tabela.|
+
 
 Para acessar a API, basta clicar no [Link](https://localhost:7060/swagger/index.html) para o acesso da mesma.
 
@@ -192,15 +202,6 @@ Utilizando no Swagger:
 
 ![preview3 img](/docs/img/swagger-ui.png)
 
-## ⌨ | Comandos
-
-| **Comandos**                                   |                                              **Descrição**|
-|------------------------------------------------|------------------------------------------------------------|
-|                                  `dotnet build`|                Constroi o projeto e todas suas dependências|
-|                                    `dotnet run`|                                            Inicia o projeto|
-|                     `dotnet ef database update`| Comando para criar ou atualizar o esquema do banco de dados|
-|   `dotnet ef migrations add NomeDaMigraçãoAqui`| Crianção de suas migrations, servindo para criar, atualizar ou excluir suas tabelas ou campos de determinada tabela.|
-
 <b>Segue a lista de commits para verificar o que foi implementado e alterado! Utilizo o Conventional Commits Pattern para ajudar e detalhar o contexto de cada commit efetuado.</b>
 
 ## 👩‍💻 Meus Links:
@@ -217,4 +218,4 @@ Utilizando no Swagger:
     - [Automapper](https://automapper.org/)
     - [SQL Server](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-sql-db-free-account-how-to-deploy?view=azuresql)
 - Link do Figma pois foi por ele que fiz a arquitetura da API: [Link](https://www.figma.com/)
-- Dbeaver é por onde acesso meus bancos de dados e gero O DER do banco: [Link](https://dbeaver.io/)
+- Dbeaver é por onde acesso meus bancos de dados e gero o DER do banco: [Link](https://dbeaver.io/)
