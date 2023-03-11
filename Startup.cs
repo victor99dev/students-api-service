@@ -35,7 +35,8 @@ namespace studentsAPI
                 options.UseSqlServer(Configuration.GetConnectionString("StudentDatabase"),
                     assembly => assembly.MigrationsAssembly(typeof(StudentContext).Assembly.FullName));
             });
-
+            
+            services.AddEndpointsApiExplorer();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
