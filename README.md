@@ -59,7 +59,7 @@ Utilizando no Insomnia, no postman é o mesmo passo a passo.
 
 ![preview3 img](/docs/img/insomnia.png)
 
-O Link gerado pelo APIM tem todas requições prontas para uso e eu fiz questão de configurar um ambiente para teste dentro do Insomnia.
+O Link gerado pelo APIM tem todas requisições prontas para uso e eu fiz questão de configurar um ambiente para teste dentro do Insomnia.
 
 Arquivo Insomnia, se encontra dentro da pasta "```.\docs\archive\```".
 
@@ -100,8 +100,6 @@ Para verificar seu Id, eu irei em get-all, podemos utilizar o Id para verificar 
 
 <details><summary>Detalhar:</summary>
 <p>
-
-/Teacher/get-all
 /Teacher/get-by/{id}
 ```json
 {
@@ -134,10 +132,8 @@ Após saber essas informações, podemos fazer o cadastras de uma school subject
 
 Aqui nesse passo podemos pular logo para o detalhar de school subject.
 
-<details><summary>Bucando o detalhar da School Subject:</summary>
+<details><summary>Buscando o detalhar da School Subject:</summary>
 <p>
-
-/SchoolSubject/post
 /SchoolSubject/get-by/{id}
 ```json
 {
@@ -156,7 +152,7 @@ Aqui nesse passo podemos pular logo para o detalhar de school subject.
 </p>
 </details>
 
-Após esse mini tutorial, os próximos endpoints seguem o mesmo fluxo.
+Após esse mini tutorial, os próximos endpoints seguem o mesmo fluxo, apenas lembrando de passar os ID's onde referenciamos, igualmente nos exemplos a cima.
 
 ### 🌐 | Endpoints:
 Os endpoint esperados estão funcinando perfeitamente.
