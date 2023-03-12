@@ -2,11 +2,12 @@
 
 ## 💻 | Projeto: Construindo uma API de cadastro Alunos.
 
-Seja bem vindo, esse projeto foi feito no intuito de criar uma API com SQL server.
+Seja bem vindo, esse projeto foi feito no intuito de criar uma API com SQL server e fazer o deploy na plataforma Azure.
 
 - Colocando em prática alguns conceitos e utilizando o EF.
 - Utilizando a linguagem C#.
 - Utilizando banco de dados SQLServer.
+
 ## ⚙ | API.
 
 ### ✔ | Tecnologias:
