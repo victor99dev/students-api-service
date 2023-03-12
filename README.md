@@ -59,6 +59,10 @@ Utilizando no Insomnia, no postman é o mesmo passo a passo.
 
 ![preview3 img](/docs/img/insomnia.png)
 
+O Link gerado pelo APIM tem todas requições prontas para uso e eu fiz questão de configurar um ambiente para teste dentro do Insomnia.
+
+Arquivo Insomnia, se encontra dentro da pasta "```.\docs\archive\```".
+
 Uma dica: 
 
 - *Cada endpoint possui datas, sendo de cadastro ou atualização, aconselhado passar a data nesse formato: [2023-03-12T02:25:03.071Z ou 2023-03-12](https://learn.microsoft.com/pt-br/sql/t-sql/data-types/datetime2-transact-sql?view=sql-server-ver16), fiz o projeto todo no swagger onde gera automaticamente, percebi que o APIM e o Insomnia chorava ao cadastrar em outro formato.*
