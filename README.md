@@ -32,9 +32,6 @@ Essa aplicação em si é bem simples e com poucas entidades se relacionando, se
 |                     `dotnet ef database update`| Comando para criar ou atualizar o esquema do banco de dados|
 |   `dotnet ef migrations add NomeDaMigraçãoAqui`| Crianção de suas migrations, servindo para criar, atualizar ou excluir suas tabelas ou campos de determinada tabela.|
 
-
-Para acessar a API, basta clicar no [Link](https://localhost:7060/swagger/index.html) para o acesso da mesma.
-
 Por meio de organização, fiz questão de fazer o levantando como uma sprint, no primeiro dia, me desafiei em uma arquitetura bem rudimentar, porém serviu como base para o desenvolvimentde de minha aplicação, nele pensei em como eu poderia utilizar a API, como as entidades iriam se relacionar e como eu gostaria dos paylous viria a ser retornado.
 
 Software Architecture:
@@ -43,6 +40,27 @@ Software Architecture:
 Aqui temos as relações entre minhas tabelas:
 
 ![preview2 img](/docs/img/studentdb-relations.png)
+
+
+## 📝 | Utilizando a API:
+
+Para acessar a API, basta clicar nos Links a baixo: 
+- [Link LocalHost com Swagger](https://localhost:7060/swagger/index.html) se for utilizar a API localmente, por sinal minha preferência para testes.
+- [Link da API gerado pelo APIM da Azure](https://studentsapimserver99.developer.azure-api.net/apis).
+- Ou podendo utilizar [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/), qual eu utilizo.
+
+Para a utilização, não esqueça de inserir o Token no Header:
+| **Header**                                   |                                            Token|
+|----------------------------------------------|-------------------------------------------------|
+|                   `Ocp-Apim-Subscription-Key`|                 aeb09f9f2e254bb1b39bcd2e3050b248|
+
+Utilizando no Insomnia, no postman é o mesmo passo a passo.
+
+![preview3 img](/docs/img/insomnia.png)
+
+Uma dica: 
+
+- *Cada endpoint possui datas, sendo de cadastro ou atualização, aconselhado passar a data nesse formato: 2023-03-12T02:25:03.071Z, fiz o projeto todo no swagger, percebi que o APIM e o Insomnia chorava ao cadastrar em outro formato.*
 
 API em si é bem simples de se utilizando, meu passo a passo é de utilização vai ser criando um Teacher e vinculando ele em uma School Subject.
 <details><summary>Cadastrando um Teacher:</summary>
@@ -198,9 +216,9 @@ O schema (model) dos endpoitns, são utilizado para passar os campos exigidos, c
 
 Todas solicitações como GET, POST, PUT e DELETE que correspondem como CREATE, READ, UPDATE e DELETE (CRUD) estão funcionando.
 
-Utilizando no Swagger:
+Visualização do Swagger:
 
-![preview3 img](/docs/img/swagger-ui.png)
+![preview4 img](/docs/img/swagger-ui.png)
 
 <b>Segue a lista de commits para verificar o que foi implementado e alterado! Utilizo o Conventional Commits Pattern para ajudar e detalhar o contexto de cada commit efetuado.</b>
 
