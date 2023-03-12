@@ -61,7 +61,7 @@ Utilizando no Insomnia, no postman é o mesmo passo a passo.
 
 Uma dica: 
 
-- *Cada endpoint possui datas, sendo de cadastro ou atualização, aconselhado passar a data nesse formato: 2023-03-12T02:25:03.071Z ou 2023-03-12, fiz o projeto todo no swagger, percebi que o APIM e o Insomnia chorava ao cadastrar em outro formato.*
+- *Cada endpoint possui datas, sendo de cadastro ou atualização, aconselhado passar a data nesse formato: [2023-03-12T02:25:03.071Z ou 2023-03-12](https://learn.microsoft.com/pt-br/sql/t-sql/data-types/datetime2-transact-sql?view=sql-server-ver16), fiz o projeto todo no swagger onde gera automaticamente, percebi que o APIM e o Insomnia chorava ao cadastrar em outro formato.*
 
 API em si é bem simples de se utilizando, meu passo a passo é de utilização vai ser criando um Teacher e vinculando ele em uma School Subject.
 <details><summary>Cadastrando um Teacher:</summary>
