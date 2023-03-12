@@ -47,7 +47,7 @@ Aqui temos as relações entre minhas tabelas:
 Para acessar a API, basta clicar nos Links a baixo: 
 - [Link LocalHost com Swagger](https://localhost:7060/swagger/index.html) se for utilizar a API localmente, por sinal minha preferência para testes.
 - [Link da API gerado pelo APIM da Azure](https://studentsapimserver99.developer.azure-api.net/apis).
-- Ou podendo utilizar [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/), qual eu utilizo.
+- Ou podendo utilizar [Postman](https://www.postman.com/) ou [Insomnia](https://insomnia.rest/).
 
 Para a utilização, não esqueça de inserir o Token no Header:
 | **Header**                                   |                                            Token|
