@@ -179,7 +179,7 @@ Aqui nesse passo podemos pular logo para o detalhar de school subject.
 </p>
 </details>
 
-Após esse mini tutorial, os próximos endpoints seguem o mesmo fluxo.
+Após esse mini tutorial, os próximos endpoints seguem o mesmo fluxo, apenas lembrando de passar os ID's onde referenciamos, igualmente nos exemplos a cima.
 
 ### 🌐 | Endpoints:
 Os endpoint esperados estão funcinando perfeitamente.
