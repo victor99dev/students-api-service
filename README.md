@@ -59,9 +59,27 @@ Utilizando no Insomnia, no postman é o mesmo passo a passo.
 
 ![preview3 img](/docs/img/insomnia.png)
 
-O Link gerado pelo APIM tem todas requições prontas para uso e eu fiz questão de configurar um ambiente para teste dentro do Insomnia.
+O [link](https://studentsapimserver99.developer.azure-api.net/api-details#api=echo-api) gerado pelo APIM tem todas requições prontas para uso.
 
-Arquivo Insomnia, se encontra dentro da pasta "```.\docs\archive\```".
+Clicamos em ```Try it``` como na imagem a seguir:
+
+![preview4 img](/docs/img/apim-01.png)
+
+E depois é só utilizar:
+
+![preview5 img](/docs/img/apim-02.png)
+
+Fiz questão de configurar um ambiente para teste dentro do Insomnia.
+
+**Arquivo Insomnia, se encontra dentro da pasta ```.\docs\archive\``` basta inportar no software.**
+
+Importando:
+
+![preview6 img](/docs/img/insomnia-01.png)
+
+Utilização:
+
+![preview7 img](/docs/img/insomnia-02.png)
 
 Uma dica: 
 
@@ -71,8 +89,9 @@ API em si é bem simples de se utilizando, meu passo a passo é de utilização 
 <details><summary>Cadastrando um Teacher:</summary>
 <p>
 
-/Teacher/Post
 ```json
+/Teacher/Post
+
 {
   "name": "Jason Mamoa",
   "created_at": "2023-03-11T02:28:07.462Z",
@@ -87,23 +106,26 @@ Para verificar seu Id, eu irei em get-all, podemos utilizar o Id para verificar 
 <details><summary>Get-all de Teacher:</summary>
 <p>
 
-/Teacher/get-all
 ```json
+/Teacher/get-all
+
 {
- "id": "c47583ec-8015-4dd4-8d4a-08db21d9077e",
-    "name": "Jason Mamoa",
-    "is_active": true
+  "id": "c47583ec-8015-4dd4-8d4a-08db21d9077e",
+  "name": "Jason Mamoa",
+  "is_active": true
 }
 ```
 </p>
 </details>
 
+Agora vamos verificar o detalhar de Teacher, utilizando seu Id.
+
 <details><summary>Detalhar:</summary>
 <p>
 
-/Teacher/get-all
-/Teacher/get-by/{id}
 ```json
+/Teacher/get-by/{id}
+
 {
   "id": "c47583ec-8015-4dd4-8d4a-08db21d9077e",
   "name": "Jason Mamoa",
@@ -120,8 +142,9 @@ Após saber essas informações, podemos fazer o cadastras de uma school subject
 <details><summary>Cadastrando uma School Subject:</summary>
 <p>
 
-/SchoolSubject/post
 ```json
+/SchoolSubject/post
+
 {
   "name": "Física",
   "teacher_id": "c47583ec-8015-4dd4-8d4a-08db21d9077e",
@@ -134,12 +157,12 @@ Após saber essas informações, podemos fazer o cadastras de uma school subject
 
 Aqui nesse passo podemos pular logo para o detalhar de school subject.
 
-<details><summary>Bucando o detalhar da School Subject:</summary>
+<details><summary>Detalhar da School Subject:</summary>
 <p>
 
-/SchoolSubject/post
-/SchoolSubject/get-by/{id}
 ```json
+/SchoolSubject/get-by/{id}
+
 {
   "id": "66a10413-a959-47d8-4a2d-08db21da414b",
   "name": "Física",
@@ -223,7 +246,7 @@ Todas solicitações como GET, POST, PUT e DELETE que correspondem como CREATE, 
 
 Visualização do Swagger:
 
-![preview4 img](/docs/img/swagger-ui.png)
+![preview8 img](/docs/img/swagger-ui.png)
 
 <b>Segue a lista de commits para verificar o que foi implementado e alterado! Utilizo o Conventional Commits Pattern para ajudar e detalhar o contexto de cada commit efetuado.</b>
 
