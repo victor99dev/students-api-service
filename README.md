@@ -129,7 +129,7 @@ Após saber essas informações, podemos fazer o cadastras de uma school subject
 
 Aqui nesse passo podemos pular logo para o detalhar de school subject.
 
-<details><summary>Cadastrando uma School Subject:</summary>
+<details><summary>Bucando o detalhar da School Subject:</summary>
 <p>
 
 /SchoolSubject/post
