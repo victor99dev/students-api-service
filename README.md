@@ -237,4 +237,5 @@ Visualização do Swagger:
     - [Automapper](https://automapper.org/)
     - [SQL Server](https://learn.microsoft.com/en-us/azure/azure-sql/database/free-sql-db-free-account-how-to-deploy?view=azuresql)
 - Link do Figma pois foi por ele que fiz a arquitetura da API: [Link](https://www.figma.com/)
-- Dbeaver é por onde acesso meus bancos de dados e gero o DER do banco: [Link](https://dbeaver.io/)
+- Dbeaver é por onde acesso meus bancos de dados: [Link](https://dbeaver.io/)
+- Onde eu gerei o diagrama do banco: [Link](https://app.sqldbm.com/#)
