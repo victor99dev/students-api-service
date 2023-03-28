@@ -61,7 +61,7 @@ Utilizando no Insomnia, no postman é o mesmo passo a passo.
 
 ![preview3 img](/docs/img/insomnia.png)
 
-O [link](https://studentsapimserver99.developer.azure-api.net/api-details#api=echo-api) gerado pelo APIM tem todas requições prontas para uso.
+O [link](https://studentsapimserver99.developer.azure-api.net/api-details#api=echo-api) gerado pelo APIM tem todas requisições prontas para uso.
 
 Clicamos em ```Try it``` como na imagem a seguir:
 
