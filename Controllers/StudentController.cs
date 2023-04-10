@@ -40,7 +40,7 @@ namespace studentsAPI.Controllers
 
             return getStudent.Any()
                 ? Ok(getStudent)
-                : NotFound("Theacher's is not found");
+                : NotFound("Student's is not found");
         }
 
         [HttpGet("get-by/{id}")]
