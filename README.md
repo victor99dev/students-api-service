@@ -2,7 +2,9 @@
 
 ## 💻 | Projeto: Construindo uma API de cadastro Alunos.
 
-Seja bem vindo, esse projeto foi feito no intuito de criar uma API com SQL server e fazer o deploy na plataforma Azure.
+Seja bem vindo, esse projeto foi feito no intuito de criar uma API com SQL server e fazer o deploy na plataforma Azure. 
+
+*O grupo de recurso na Azure já foi desativado, uma ótima experiência em produção nos serviços da Microsoft*.
 
 - Colocando em prática alguns conceitos e utilizando o EF.
 - Utilizando a linguagem C#.
@@ -59,7 +61,7 @@ Utilizando no Insomnia, no postman é o mesmo passo a passo.
 
 ![preview3 img](/docs/img/insomnia.png)
 
-O [link](https://studentsapimserver99.developer.azure-api.net/api-details#api=echo-api) gerado pelo APIM tem todas requições prontas para uso.
+O [link](https://studentsapimserver99.developer.azure-api.net/api-details#api=echo-api) gerado pelo APIM tem todas requisições prontas para uso.
 
 Clicamos em ```Try it``` como na imagem a seguir:
 
@@ -85,7 +87,7 @@ Uma dica:
 
 - *Cada endpoint possui datas, sendo de cadastro ou atualização, aconselhado passar a data nesse formato: [2023-03-12T02:25:03.071Z ou 2023-03-12](https://learn.microsoft.com/pt-br/sql/t-sql/data-types/datetime2-transact-sql?view=sql-server-ver16), fiz o projeto todo no swagger onde gera automaticamente, percebi que o APIM e o Insomnia chorava ao cadastrar em outro formato.*
 
-API em si é bem simples de se utilizando, meu passo a passo é de utilização vai ser criando um Teacher e vinculando ele em uma School Subject.
+API em si é bem simples de ser utilizada, meu passo a passo é de utilização vai ser criando um Teacher e vinculando ele em uma School Subject.
 <details><summary>Cadastrando um Teacher:</summary>
 <p>
 
