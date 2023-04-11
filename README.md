@@ -35,7 +35,7 @@ Essa aplicação em si é bem simples e com poucas entidades se relacionando, se
 |                     `dotnet ef database update`| Comando para criar ou atualizar o esquema do banco de dados|
 |   `dotnet ef migrations add NomeDaMigraçãoAqui`| Crianção de suas migrations, servindo para criar, atualizar ou excluir suas tabelas ou campos de determinada tabela.|
 
-Por meio de organização, fiz questão de fazer o levantando como uma sprint, no primeiro dia, me desafiei em uma arquitetura bem rudimentar, porém serviu como base para o desenvolvimentde de minha aplicação, nele pensei em como eu poderia utilizar a API, como as entidades iriam se relacionar e como eu gostaria dos paylous viria a ser retornado.
+Por meio de organização, fiz questão de fazer o levantando como uma sprint, no primeiro dia, me desafiei em uma arquitetura bem rudimentar, porém serviu como base para o desenvolvimento de minha aplicação, nele pensei em como eu poderia utilizar a API, como as entidades iriam se relacionar e como eu gostaria dos payloads viria a ser retornado.
 
 Software Architecture:
 ![preview1 img](/docs/img/software-architecture.png)
